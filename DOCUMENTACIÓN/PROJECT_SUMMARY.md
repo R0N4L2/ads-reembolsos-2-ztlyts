@@ -18,15 +18,15 @@ This project implements a complete machine learning pipeline to predict soccer m
 ### Components
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│                   Data Layer                             │
+┌───────────────────────────────────────────────────────┐
+│                   Data Layer                          │
 │  ┌──────────┐  ┌──────────┐  ┌──────────┐             │
 │  │ matches  │  │  teams   │  │qualified │             │
 │  │  .csv    │  │  .csv    │  │  .csv    │             │
 │  └────┬─────┘  └────┬─────┘  └────┬─────┘             │
-└───────┼─────────────┼──────────────┼───────────────────┘
-        │             │              │
-        └─────────────┴──────────────┘
+└───────┼─────────────┼─────────────┼───────────────────┘
+        │             │             │
+        └─────────────┴─────────────┘
                       │
         ┌─────────────▼──────────────┐
         │ TeamStrengthCalculator     │
@@ -59,9 +59,9 @@ This project implements a complete machine learning pipeline to predict soccer m
         │  - Visualizations          │
         └────────────────────────────┘
 
-┌─────────────────────────────────────────────────────────┐
-│              Supporting Modules                          │
-│                                                          │
+┌───────────────────────────────────────────────────────┐
+│              Supporting Modules                       │
+│                                                       │
 │  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐ │
 │  │  config.py   │  │   utils.py   │  │ visualize.py │ │
 │  │              │  │              │  │              │ │
@@ -70,17 +70,17 @@ This project implements a complete machine learning pipeline to predict soccer m
 │  │ - Features   │  │ - Validation │  │ - Export     │ │
 │  │ - Settings   │  │ - Export     │  │   images     │ │
 │  └──────────────┘  └──────────────┘  └──────────────┘ │
-│                                                          │
-│  ┌────────────────────────────────────────────────────┐ │
-│  │         predict_match.py                           │ │
-│  │  - Interactive mode                                │ │
-│  │  - Single match predictions                        │ │
-│  │  - Batch processing                                │ │
-│  └────────────────────────────────────────────────────┘ │
-└─────────────────────────────────────────────────────────┘
+│                                                       │
+│  ┌──────────────────────────────────────────────────┐ │
+│  │         predict_match.py                         │ │
+│  │  - Interactive mode                              │ │
+│  │  - Single match predictions                      │ │
+│  │  - Batch processing                              │ │
+│  └──────────────────────────────────────────────────┘ │
+└───────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────┐
-│                Testing & Quality                         │
+│                Testing & Quality                        │
 │  ┌────────────────────────────────────────────────────┐ │
 │  │  tests/test_predictor.py                           │ │
 │  │  - 15+ unit tests                                  │ │
